@@ -1,0 +1,11 @@
+---
+- name: Add .zshrc
+  copy:
+    src: .zshrc
+    dest: /home/jadiunr/.zshrc
+  become: no
+
+- name: Change login shell to zsh
+  user:
+    name: jadiunr
+    shell: /bin/zsh

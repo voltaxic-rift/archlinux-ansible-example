@@ -1,0 +1,15 @@
+---
+- name: Install packages from AUR
+  kewlfft.aur.aur:
+    use: yay
+    name:
+    - google-chrome
+    - slack-desktop
+    - ghq-bin
+    - ttf-meslo-nerd-font-powerlevel10k
+    - authy
+    - zoom
+    - jsonnet
+    - jsonnet-bundler-bin
+    state: present
+  become: no

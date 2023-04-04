@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+  - arch_packages
+  - yay
+  - aur_packages

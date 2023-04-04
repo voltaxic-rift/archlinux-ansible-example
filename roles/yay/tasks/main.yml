@@ -1,0 +1,14 @@
+---
+- name: git clone yay
+  git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: /home/jadiunr/yay
+    update: true
+  become: no
+
+- name: Build and install yay
+  command:
+    chdir: /home/jadiunr/yay
+    cmd: makepkg -sfi --noconfirm
+    creates: /usr/bin/yay
+  become: no

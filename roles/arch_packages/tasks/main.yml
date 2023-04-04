@@ -1,0 +1,54 @@
+---
+- name: Install packages from archlinux repos
+  pacman:
+    name:
+    - git
+    - base-devel
+    - linux-headers
+    - dmidecode
+    - zsh
+    - zsh-completions
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
+    - zsh-history-substring-search
+    - zsh-theme-powerlevel10k
+    - awesome-terminal-fonts
+    - powerline-fonts
+    - powerline
+    - rclone
+    - firefox
+    - code
+    - fcitx5-im
+    - fcitx5-mozc
+    - noto-fonts-cjk
+    - noto-fonts-emoji
+    - noto-fonts-extra
+    - discord
+    - steam
+    - virtualbox
+    - virtualbox-guest-iso
+    - libvirt
+    - qemu-full
+    - dnsmasq
+    - bridge-utils
+    - openbsd-netcat
+    - virt-manager
+    - virt-viewer
+    - vagrant
+    - docker
+    - docker-compose
+    - peco
+    - lazygit
+    - jq
+    - gimp
+    - strace
+    - obs-studio
+    - ffmpegthumbnailer
+    - imagemagick
+    - webp-pixbuf-loader
+    - vlc
+    - clamav
+    - clamtk
+    - wireshark-qt
+    - reflector
+    state: present
